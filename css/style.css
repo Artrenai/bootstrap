@@ -1,0 +1,10 @@
+#bio {
+	height: 400px;
+}
+
+#biopic {
+	background: url("../image/biopic.jpg") no-repeat center center;
+	background-size: cover;
+	height: 400px;
+}
+
