@@ -5,6 +5,16 @@
 #biopic {
 	background: url("../image/biopic.jpg") no-repeat center center;
 	background-size: cover;
-	height: 400px;
+	height: auto;
+
 }
 
+#title {
+	background-color: #000000;
+	positon: relative;
+	display: inline-block;
+}
+
+body {
+	background-color: #000000;
+}
