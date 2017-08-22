@@ -13,7 +13,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<!-- Link Swiper's CSS -->
-		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
 		<link rel="stylesheet" href="css/style.css"
 	</head>
 	<body>
@@ -88,7 +88,7 @@
 		</div>
 
 		<!-- Swiper JS -->
-		<script src="js/swiper.min.js"></script>
+		<script src="js/swiper.js"></script>
 
 		<!-- Initialize Swiper -->
 		<script>
