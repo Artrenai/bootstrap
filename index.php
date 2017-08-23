@@ -1,4 +1,4 @@
-<!DOCTYPE   html>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -10,11 +10,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
 				integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-		<!-- Link Swiper's CSS -->
-		<link rel="stylesheet" href="css/swiper.css">
-		<link rel="stylesheet" href="css/style.css"
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 
@@ -31,8 +27,8 @@
 				<div class="card-block col-md-12 ">
 					<h2 class="card-header">Godfrey Davis</h2>
 					<div class="container-fluid mx-auto text-wrap" role="dialog">
-						<p class="card-title">Photographer/Retouch Artist/Web Developer</p>
-						<p class="card-text">Hi! Welcome to my portfolio. It’s nothing too grand, just a place to display all
+						<p class="card-title">Portrait Photographer/Retouch Artist/Web Developer</p>
+						<p class="card-text" id="des">Hi! Welcome to my portfolio. It’s nothing too grand, just a place to display all
 							my
 							artwork
 							throughout the years. I’m an Aspiring Engineer. I have been fascinated by the bridge of
@@ -55,62 +51,65 @@
 				</div>
 			</div>
 		</section>
-		<div class="swiper-container gallery-top">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>
-			</div>
-			<!-- Add Arrows -->
-			<div class="swiper-button-next swiper-button-white"></div>
-			<div class="swiper-button-prev swiper-button-white"></div>
-		</div>
-		<div class="swiper-container gallery-thumbs">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>
-				<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="image/photography/picture1.jpg" alt="First slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="image/photography/picture2.jpg" alt="Second slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="image/photography/picture3.jpg" alt="Third slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="image/photography/picture4.jpg" alt="Fourth slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="image/photography/picture5.jpg" alt="Fifth slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="image/photography/picture6.jpg" alt="Sixth slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="image/photography/picture7.jpg" alt="Seventh slide">
+				</div>
 			</div>
 		</div>
+		<!--End of Retouch Gallery-->
+		<section class="container-fluid mx-auto text-center" id="title">
+			<div class="card mx-auto text-light text-center" id="title">
+				<div class="card-header ">
+					Photo-Editing
+				</div>
+			</div>
+		</section>
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="image/retouch/picture1.jpg" alt="First slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="image/retouch/picture2.jpg" alt="Second slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="image/retouch/picture3.jpg" alt="Third slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="image/retouch/picture4.jpg" alt="Fourth slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="image/retouch/picture5.jpg" alt="Fifth slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="image/retouch/picture6.jpg" alt="Sixth slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="image/retouch/picture7.jpg" alt="Seventh slide">
+				</div>
+			</div>
+		</div>
 
-		<!-- Swiper JS -->
-		<script src="js/swiper.js"></script>
-
-		<!-- Initialize Swiper -->
-		<script>
-			var galleryTop = new Swiper('.gallery-top', {
-				nextButton: '.swiper-button-next',
-				prevButton: '.swiper-button-prev',
-				spaceBetween: 10,
-				loop:true,
-				loopedSlides: 5, //looped slides should be the same
-			});
-			var galleryThumbs = new Swiper('.gallery-thumbs', {
-				spaceBetween: 10,
-				slidesPerView: 4,
-				touchRatio: 0.2,
-				loop:true,
-				loopedSlides: 5, //looped slides should be the same
-				slideToClickedSlide: true
-			});
-			galleryTop.params.control = galleryThumbs;
-			galleryThumbs.params.control = galleryTop;
-
-		</script>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 				  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 				  crossorigin="anonymous"></script>
@@ -120,6 +119,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
 				  integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
 				  crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
 	</body>
-</html>
+
 </html>
