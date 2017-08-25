@@ -78,6 +78,81 @@
 
 		<!--bio section end-->
 
+		<!--Art Gallery-->
+		<section class="container-fluid mx-auto text-center" id="title">
+			<div class="card mx-auto text-light text-center" id="title">
+
+				<div class="card-header ">
+					<span class="d-xl-none">Art</span>
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid no-gutters d-flex p-0">
+			<div class="card    text-white m-0 float-right d-none d-xl-block col-xl-6" id="mid-card">
+				<div class="card-block">
+					<h2 class="card-header " id="title">Art</h2>
+					<div class="container-fluid mx-auto text-wrap" role="dialog">
+
+						<p class="card-text" id="des">This is a mix of Photography and digital manipulation to create unique results.
+							I try to experiment with vibrant Neon colors.Its become a playground of the extremes of my imagination and a
+							challeng to see how to see how close i can reproduce the images of my imagination with the tools I have at my
+							disposal.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="aGallery" class="carousel slide col-xl-6 d-block" data-ride="carousel">
+				<div class="carousel-inner">
+
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="image/art/picture1.jpg" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="image/art/picture2.jpg" alt="Second slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="image/art/picture3.jpg" alt="Third slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="image/art/picture4.jpg" alt="Fourth slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="image/art/picture5.jpg" alt="Fifth slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="image/art/picture6.jpg" alt="Sixth slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="image/art/picture7.jpg" alt="Seventh slide">
+					</div>
+					<a class="carousel-control-prev" href="#aGallery" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#aGallery" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid mx-auto text-center d-xl-none" id="mid-card">
+			<div class="card mx-auto text-light text-center" id="mid-card-2">
+
+				<div class="card-header ">
+
+					<p class="card-text" id="des">A mix of Photography and digital manipulation to create unique results.
+						I try to experiment with vibrant Neon colors.
+
+					</p>
+				</div>
+			</div>
+		</section>
+		<!--End of Art Gallery-->
+
+
+
 		<!--Photography Gallery-->
 
 		<section class="container-fluid mx-auto text-center" id="title">
@@ -89,19 +164,6 @@
 			</div>
 		</section>
 		<section class="container-fluid no-gutters d-flex p-0">
-			<div class="card    text-white m-0 float-right d-none d-xl-block" id="mid-card">
-				<div class="card-block">
-					<h2 class="card-header " id="title">Photography</h2>
-					<div class="container-fluid mx-auto text-wrap" role="dialog">
-
-						<p class="card-text" id="des">Moving to New York I was inspired by fashion’s editorial Photography.
-							All of my photos are shot with a shallow lens in natural lighting. I use my photo-manipulation
-							experience to make the colors of the photography vibrant. In some ways it has a subtle consistency
-							with my artwork.
-						</p>
-					</div>
-				</div>
-			</div>
 
 			<div id="pGallery" class="carousel slide col-xl-6 d-block" data-ride="carousel">
 				<div class="carousel-inner">
@@ -137,9 +199,24 @@
 					</a>
 				</div>
 			</div>
+			<div class="card    text-white m-0 float-right d-none d-xl-block col-xl-6" id="mid-card">
+				<div class="card-block">
+					<h2 class="card-header " id="title">Photography</h2>
+					<div class="container-fluid mx-auto text-wrap" role="dialog">
+
+						<p class="card-text" id="des">Moving to New York I was inspired by fashion’s editorial Photography.
+							All of my photos are shot with a shallow lens in natural lighting. I use my photo-manipulation
+							experience to make the colors of the photography vibrant. In some ways it has a subtle consistency
+							with my artwork.
+						</p>
+					</div>
+				</div>
+			</div>
 		</section>
+
+
 		<section class="container-fluid mx-auto text-center d-xl-none" id="mid-card">
-			<div class="card mx-auto text-light text-center"id="mid-card-2">
+			<div class="card mx-auto text-light text-center" id="mid-card-2">
 
 				<div class="card-header ">
 					<p class="card-text" id="des">Moving to New York I was inspired by fashion’s editorial Photography.
@@ -162,6 +239,21 @@
 			</div>
 		</section>
 		<section class="container-fluid no-gutters d-flex p-0">
+			<div class="card    text-white m-0 float-right d-none d-xl-block col-xl-6" id="mid-card">
+				<div class="card-block">
+					<h2 class="card-header" id="title">Editing</h2>
+					<div class="container-fluid mx-auto text-wrap" role="dialog">
+
+						<p class="card-text" id="des">I try to document all my editing. Not only so that I can see my own
+							progress but also it gives me time think about the things I’ve come across by accident and that
+							worked and have a greater understanding of the things I want to improve. All my work thus far is a
+							product of my experience and whether it is to the extreme of my neon vibrant artwork or the
+							subtleties of my editorial photography, they all have the same roots and are the results of each
+							other.
+						</p>
+					</div>
+				</div>
+			</div>
 			<div id="rGallery" class="carousel slide col-xl-6 d-block" data-ride="carousel">
 				<div class="carousel-inner ">
 					<div class="carousel-item active">
@@ -195,23 +287,6 @@
 					</a>
 				</div>
 			</div>
-
-			<div class="card    text-white m-0 float-right d-none d-xl-block" id="mid-card">
-				<div class="card-block">
-					<h2 class="card-header" id="title">Editing</h2>
-					<div class="container-fluid mx-auto text-wrap" role="dialog">
-
-						<p class="card-text" id="des">I try to document all my editing. Not only so that I can see my own
-							progress but also it gives me time think about the things I’ve come across by accident and that
-							worked and have a greater understanding of the things I want to improve. All my work thus far is a
-							product of my experience and whether it is to the extreme of my neon vibrant artwork or the
-							subtleties of my editorial photography, they all have the same roots and are the results of each
-							other.
-						</p>
-					</div>
-				</div>
-			</div>
-			</div>
 		</section>
 		<section class="container-fluid mx-auto text-center d-xl-none" id="mid-card">
 			<div class="card mx-auto text-light text-center" id="mid-card-2">
@@ -230,74 +305,6 @@
 
 		<!--End of Retouch Gallery-->
 
-
-		<!--Art Gallery-->
-		<section class="container-fluid mx-auto text-center" id="title">
-			<div class="card mx-auto text-light text-center" id="title">
-				<div class="card-header ">
-					<span class="d-xl-none">Art</span>
-
-				</div>
-			</div>
-		</section>
-		<section class="container-fluid no-gutters d-flex p-0">
-			<div class="card  text-white m-0 float-right d-none d-xl-block " id="mid-card">
-				<div class="card-block">
-					<h2 class="card-header" id="title">Art</h2>
-					<div class="container-fluid mx-auto text-wrap" role="dialog">
-
-						<p class="card-text" id="des">A mix of Photography and digital manipulation to create unique results.
-							I try to experiment with vibrant Neon colors.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div id="aGallery" class="carousel slide col-xl-6 d-block" data-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img class="d-block w-100" src="image/art/picture1.jpg" alt="First slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="image/art/picture2.jpg" alt="Second slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="image/art/picture3.jpg" alt="Third slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="image/art/picture4.jpg" alt="Fourth slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="image/art/picture5.jpg" alt="Fifth slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="image/art/picture6.jpg" alt="Sixth slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="image/art/picture7.jpg" alt="Seventh slide">
-					</div>
-					<a class="carousel-control-prev" href="#aGallery" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#aGallery" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-			</div>
-		</section>
-		<section class="container-fluid mx-auto text-center d-xl-none" id="mid-card">
-			<div class="card mx-auto text-light text-center" id="mid-card-2">
-				<div class="card-header ">
-
-					<p class="card-text" id="des">A mix of Photography and digital manipulation to create unique results.
-						I try to experiment with vibrant Neon colors.
-					</p>
-				</div>
-			</div>
-		</section>
-		<!--End of Art Gallery-->
 
 
 		<!--Footer-->
