@@ -9,6 +9,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
 				integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="js/script.js"></script>
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -31,14 +32,14 @@
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Gallery
 						</a>
-						<div class="dropdown-menu bg-dark text-white" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Photography</a>
-							<a class="dropdown-item" href="#">Photo-Editing</a>
-							<a class="dropdown-item" href="#">Art</a>
+						<div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item text-white" href="#Art">Art</a>
+							<a class="dropdown-item text-white" href="#Photography">Photography</a>
+							<a class="dropdown-item text-white" href="#Retouch">Photo-Editing</a>
 						</div>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact Me</a>
+					<li class="nav-item clickable">
+						<a class="nav-link clickable" href="#Contact" data-toggle="modal" data-target="#contactMe">Contact Me</a>
 					</li>
 				</ul>
 			</div>
@@ -60,16 +61,16 @@
 					<h2 class="card-header">Godfrey Davis</h2>
 					<div class="container-fluid mx-auto text-wrap" role="dialog">
 						<p class="card-title">Portrait Photographer/Retouch Artist/Web Developer</p>
-						<p class="card-text" id="des">Hi! Welcome to my portfolio. It’s nothing too grand, just a place to
+						<p class="card-text " id="des">Hi! Welcome to my portfolio. This is a place to
 							display all
 							my
-							artwork
-							throughout the years. I’m an Aspiring Engineer. I have been fascinated by the bridge of
+							work
+							throughout the years. I have been fascinated by the bridge of
 							technology and arts and have been experimenting with the idea since 2005.Learning slowly through
 							different mediums,my ultimate goal is to be a part of the community of content creators who find
 							ways to successfully bridge the benefits of STEM with the Arts and make it useful and functional
 							in the progression of how we interact in society. So thanks for coming to my page. My small
-							steps to a 1,000 mile journey.
+							steps to 1,000 miles.
 						</p>
 					</div>
 				</div>
@@ -82,20 +83,23 @@
 		<section class="container-fluid mx-auto text-center" id="title">
 			<div class="card mx-auto text-light text-center" id="title">
 
-				<div class="card-header ">
+				<div class="card-header" id="Art">
 					<span class="d-xl-none">Art</span>
 				</div>
 			</div>
 		</section>
 		<section class="container-fluid no-gutters d-flex p-0">
-			<div class="card    text-white m-0 float-right d-none d-xl-block col-xl-6" id="mid-card">
+			<div class="card text-white m-0 float-right d-none d-xl-block col-xl-6" id="mid-card">
 				<div class="card-block">
 					<h2 class="card-header " id="title">Art</h2>
 					<div class="container-fluid mx-auto text-wrap" role="dialog">
 
-						<p class="card-text" id="des">This is a mix of Photography and digital manipulation to create unique results.
-							I try to experiment with vibrant Neon colors.Its become a playground of the extremes of my imagination and a
-							challeng to see how to see how close i can reproduce the images of my imagination with the tools I have at my
+						<p class="card-text  lead text-justify p-3" id="des">This is a mix of Photography and digital
+							manipulation to create unique
+							results.
+							I try to experiment with vibrant Neon colors.Its become a playground of the extremes of my
+							imagination and a
+							challenge to see how close i can come to reproducing my vision with the tools I have at my
 							disposal.
 						</p>
 					</div>
@@ -142,9 +146,12 @@
 
 				<div class="card-header ">
 
-					<p class="card-text" id="des">A mix of Photography and digital manipulation to create unique results.
-						I try to experiment with vibrant Neon colors.
-
+					<p class="card-text" id="des">This is a mix of Photography and digital manipulation to create unique
+						results.
+						I try to experiment with vibrant Neon colors.Its become a playground of the extremes of my imagination
+						and a
+						challenge to see how close i can come to reproducing my vision with the tools I have at my
+						disposal.
 					</p>
 				</div>
 			</div>
@@ -152,13 +159,12 @@
 		<!--End of Art Gallery-->
 
 
-
 		<!--Photography Gallery-->
 
 		<section class="container-fluid mx-auto text-center" id="title">
 			<div class="card mx-auto text-light text-center" id="title">
 
-				<div class="card-header ">
+				<div class="card-header" id="Photography">
 					<span class="d-xl-none">Photography</span>
 				</div>
 			</div>
@@ -204,7 +210,8 @@
 					<h2 class="card-header " id="title">Photography</h2>
 					<div class="container-fluid mx-auto text-wrap" role="dialog">
 
-						<p class="card-text" id="des">Moving to New York I was inspired by fashion’s editorial Photography.
+						<p class="card-text lead text-justify p-3" id="des">Living in New York I was inspired by fashion’s
+							editorial Photography.
 							All of my photos are shot with a shallow lens in natural lighting. I use my photo-manipulation
 							experience to make the colors of the photography vibrant. In some ways it has a subtle consistency
 							with my artwork.
@@ -219,7 +226,7 @@
 			<div class="card mx-auto text-light text-center" id="mid-card-2">
 
 				<div class="card-header ">
-					<p class="card-text" id="des">Moving to New York I was inspired by fashion’s editorial Photography.
+					<p class="card-text" id="des">Living in New York I was inspired by fashion’s editorial Photography.
 						All of my photos are shot with a shallow lens in natural lighting. I use my photo-manipulation
 						experience to make the colors of the photography vibrant. In some ways it has a subtle consistency
 						with my artwork.
@@ -233,7 +240,7 @@
 		<!--Beginning of Retouch Gallery-->
 		<section class="container-fluid mx-auto text-center" id="title">
 			<div class="card mx-auto text-light text-center" id="title">
-				<div class="card-header ">
+				<div class="card-header" id="Retouch">
 					<span class="d-xl-none">Photo-Editing</span>
 				</div>
 			</div>
@@ -244,10 +251,12 @@
 					<h2 class="card-header" id="title">Editing</h2>
 					<div class="container-fluid mx-auto text-wrap" role="dialog">
 
-						<p class="card-text" id="des">I try to document all my editing. Not only so that I can see my own
+						<p class="card-text lead text-justify p-3" id="des">I try to document all my editing. Not only so that
+							I can see my own
 							progress but also it gives me time think about the things I’ve come across by accident and that
+							have
 							worked and have a greater understanding of the things I want to improve. All my work thus far is a
-							product of my experience and whether it is to the extreme of my neon vibrant artwork or the
+							product of my experiences and whether it is to the extreme of my neon vibrant artwork or the
 							subtleties of my editorial photography, they all have the same roots and are the results of each
 							other.
 						</p>
@@ -293,9 +302,9 @@
 
 				<div class="card-header ">
 					<p class="card-text" id="des">I try to document all my editing. Not only so that I can see my own
-						progress but also it gives me time think about the things I’ve come across by accident and that
+						progress but also it gives me time think about the things I’ve come across by accident and that have
 						worked and have a greater understanding of the things I want to improve. All my work thus far is a
-						product of my experience and whether it is to the extreme of my neon vibrant artwork or the
+						product of my experiences and whether it is to the extreme of my neon vibrant artwork or the
 						subtleties of my editorial photography, they all have the same roots and are the results of each
 						other.
 					</p>
@@ -304,10 +313,85 @@
 		</section>
 
 		<!--End of Retouch Gallery-->
+		<!--Contact Form-->
+		<div class="modal fade" id="contactMe" tabindex="-4" role="dialog" aria-labelledby="exampleModalLabel"
+			  aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header " id="title">
+						<h5 class="modal-title mx-auto text-white" id="modalContactMe">Contact Me</h5>
+						<button type="button" class="close" data-dismiss="modal"><i class="fa fa-window-close text-white" aria-hidden="true"></i></button>
+					</div>
+					<div class="modal-body" id="mid-card-2">
+						<form>
+							<div class="form-group">
+								<label class="text-white" for="name">Name</label>
+								<div class="input-group" id="mid-card">
+									<div class="input-group-addon" id="title">
+										<i class="fa fa-user text-white" aria-hidden="true"></i>
+									</div>
+									<input type="text" class="form-control" id="name" name="name" placeholder="Name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="text-white" for="email">Email address</label>
+								<div class="input-group">
+									<div class="input-group-addon" id="title">
+										<i class="fa fa-envelope text-white" aria-hidden="true"></i>
+									</div>
+									<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="text-white" for="subject">Subject</label>
+								<div class="input-group">
+									<div class="input-group-addon" id="title">
+										<i class="fa fa-pencil text-white" aria-hidden="true"></i>
+									</div>
+									<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="text-white" for="message">Message</label>
+								<div class="input-group">
+									<div class="input-group-addon" id="title">
+										<i class="fa fa-comment text-white" aria-hidden="true"></i>
+									</div>
+									<textarea class="form-control" rows="5" id="message" name="message"
+												 placeholder="Message"></textarea>
+								</div>
+							</div>
+						</form>
+						<div class="modal-footer" id="mid-card-2 m-0">
 
-
+							<button type="button" class="btn btn-primary mx-auto">Send message</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--Contact Form end-->
 
 		<!--Footer-->
+		<footer class="navbar-fixed-bottom no-gutter" id="top">
+			<div class="container-fluid" id="Contact">
+				<div class="row">
+					<div class="col-sm-7 text-right p-3">
+						<span class="text-white text-right ">All images</span>
+						<i class="fa fa-copyright text-white" aria-hidden="true"></i>
+						<span class="text-white text-right ">2010-2017 Artrenai</span>
+					</div>
+					<div class="col-sm-5 text-right ">
+						<i class="fa fa-linkedin-square fa-2x text-white p-2" aria-hidden="true"></i>
+						<i class="fa fa-github-square fa-2x text-white p-2" aria-hidden="true"></i>
+						<i class="fa fa-twitter-square fa-2x text-white p-2" aria-hidden="true"></i>
+						<i class="fa fa-instagram fa-2x text-white p-2" aria-hidden="true"></i>
+
+
+					</div>
+				</div>
+			</div>
+		</footer>
 
 		<!--End Footer-->
 
