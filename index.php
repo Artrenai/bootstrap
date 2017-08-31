@@ -12,14 +12,20 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<!--Javascript jQuery etc--->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-				  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-				  crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous"></script>
+
 
 		<!-- jQuery Form, Additional Methods, Validate -->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+
+		<!-- Your JavaScript Form Validator -->
+		<script src="js/form-validate.js"></script>
+
+		<!-- Google reCAPTCHA -->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 
 		<!--bootstrap required files--->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
@@ -30,11 +36,6 @@
 				  crossorigin="anonymous"></script>
 
 
-		<!-- Your JavaScript Form Validator -->
-		<script src="js/form-validate.js"></script>
-
-		<!-- Google reCAPTCHA -->
-		<script src='https://www.google.com/recaptcha/api.js'></script>
 
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/script.js"></script>
@@ -344,7 +345,7 @@
 					</div>
 					<!--Contact form-->
 					<div class="modal-body" id="mid-card-2">
-						<form id="contact form" action="" method="post" novalidate>
+						<form id="contact form" action="php/mailer.php" method="post" novalidate>
 							<div class="form-group">
 								<!---Name Field-->
 								<label class="text-white" for="name">Name</label>
@@ -386,16 +387,17 @@
 												 placeholder="Message"></textarea>
 								</div>
 							</div>
+							<div class="modal-footer" id="sField">
+								<div class="g-recaptcha" data-sitekey="6Ldc3y4UAAAAAK41_8gfyPe5Q6byUO7GNPnvXayU"></div>
+								<button type="submit" class="btn btn-primary">Send message</button>
+							</div>
 						</form>
 					<!--End of Contact Form-->
 
 						<div id="output-area">
 
 						</div>
-						<div class="modal-footer" id="sField">
-							<div class="g-recaptcha" data-sitekey="6Ldc3y4UAAAAAK41_8gfyPe5Q6byUO7GNPnvXayU"></div>
-							<button type="button" class="btn btn-primary">Send message</button>
-						</div>
+
 					</div>
 				</div>
 			</div>
