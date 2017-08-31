@@ -18,31 +18,39 @@ body {
 	background-color: #000000;
 	border-color: #000000;
 }
+
 #des {
-	padding-top:1rem;
-	padding-bottom:1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
-#top{
-	background-color:#121213;
+
+#top {
+	background-color: #121213;
 }
-#mid-card{
+
+#mid-card {
 	background-color: #0e0f11;
-	border-color:#000000;
+	border-color: #000000;
 }
-#mid-card-2{
+
+#mid-card-2 {
 	background-color: #0e0f11;
-	border:none;
+	border: none;
 }
-.dropdown-menu > a:hover, dropdownmenu> a:focus{
-	background-color:#121213;
+
+.dropdown-menu > a:hover, dropdownmenu > a:focus {
+	background-color: #121213;
 }
+
 .clickable {
 	cursor: pointer;
 }
-#sField{
+
+#sField {
 	border-color: #333333;
 	padding-top: 2rem;
 }
+
 div#Photography:before,
 div#Art:before,
 div#Retouch:before {
@@ -51,6 +59,15 @@ div#Retouch:before {
 	height: 50px;
 	margin: -30px 0 0;
 	visibility: hidden;
+}
+
+@media screen and (max-height: 575px) {
+	#rc-imageselect, .g-recaptcha {
+		transform: scale(0.77);
+		-webkit-transform: scale(0.77);
+		transform-origin: 0 0;
+		-webkit-transform-origin: 0 0;
+	}
 }
 
 

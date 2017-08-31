@@ -12,8 +12,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<!--Javascript jQuery etc--->
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-			crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
 
 		<!-- jQuery Form, Additional Methods, Validate -->
@@ -345,7 +344,10 @@
 					</div>
 					<!--Contact form-->
 					<div class="modal-body" id="mid-card-2">
-						<form id="contact form" action="php/mailer.php" method="post" novalidate>
+						<form id="contact-form" action="php/mailer.php" method="post" novalidate>
+							<div id="output-area">
+
+							</div>
 							<div class="form-group">
 								<!---Name Field-->
 								<label class="text-white" for="name">Name</label>
@@ -388,15 +390,17 @@
 								</div>
 							</div>
 							<div class="modal-footer" id="sField">
+
+								<div class="container-fluid d-block float-right">
 								<div class="g-recaptcha" data-sitekey="6Ldc3y4UAAAAAK41_8gfyPe5Q6byUO7GNPnvXayU"></div>
-								<button type="submit" class="btn btn-primary">Send message</button>
+
+								<button type="submit" class="btn btn-primary ">Send message</button>
+								</div>
 							</div>
 						</form>
 					<!--End of Contact Form-->
 
-						<div id="output-area">
 
-						</div>
 
 					</div>
 				</div>
