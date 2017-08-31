@@ -10,13 +10,31 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
 				integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="js/script.js"></script>
+		<!-- jQuery Form, Additional Methods, Validate -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+
+		<!-- Your JavaScript Form Validator -->
+		<script src="js/form-validate.js"></script>
+
+		<!-- Google reCAPTCHA -->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+				  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+				  crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+				  integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+				  crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+				  integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+				  crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js"></script>
 	</head>
 	<body>
-
 		<!--navbar-->
-		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="top">
+		<nav class="navbar navbar-expand-lg  navbar-dark fixed-top" id="top">
 			<a class="navbar-brand" href="#">Artrenai</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 					  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,14 +50,14 @@
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Gallery
 						</a>
-						<div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+						<div class="dropdown-menu bg-dark">
 							<a class="dropdown-item text-white" href="#Art">Art</a>
 							<a class="dropdown-item text-white" href="#Photography">Photography</a>
 							<a class="dropdown-item text-white" href="#Retouch">Photo-Editing</a>
 						</div>
 					</li>
-					<li class="nav-item clickable">
-						<a class="nav-link clickable" href="#Contact" data-toggle="modal" data-target="#contactMe">Contact Me</a>
+					<li class="nav-item ">
+						<a class="nav-link" href="" data-toggle="modal" data-target="#contactMe">Contact Me</a>
 					</li>
 				</ul>
 			</div>
@@ -47,7 +65,6 @@
 		<!--end of navbar-->
 
 		<!--bio section using  card class-->
-
 		<div class="card-deck m-0">
 			<!---card with biopic background-->
 			<div class="card m-0 col-md-12 col-lg-6" id="biopic">
@@ -160,7 +177,6 @@
 
 
 		<!--Photography Gallery-->
-
 		<section class="container-fluid mx-auto text-center" id="title">
 			<div class="card mx-auto text-light text-center" id="title">
 
@@ -170,10 +186,8 @@
 			</div>
 		</section>
 		<section class="container-fluid no-gutters d-flex p-0">
-
 			<div id="pGallery" class="carousel slide col-xl-6 d-block" data-ride="carousel">
 				<div class="carousel-inner">
-
 					<div class="carousel-item active">
 						<img class="d-block w-100" src="image/photography/picture1.jpg" alt="First slide">
 					</div>
@@ -250,7 +264,6 @@
 				<div class="card-block">
 					<h2 class="card-header" id="title">Editing</h2>
 					<div class="container-fluid mx-auto text-wrap" role="dialog">
-
 						<p class="card-text lead text-justify p-3" id="des">I try to document all my editing. Not only so that
 							I can see my own
 							progress but also it gives me time think about the things I’ve come across by accident and that
@@ -311,7 +324,6 @@
 				</div>
 			</div>
 		</section>
-
 		<!--End of Retouch Gallery-->
 		<!--Contact Form-->
 		<div class="modal fade" id="contactMe" tabindex="-4" role="dialog" aria-labelledby="exampleModalLabel"
@@ -320,7 +332,8 @@
 				<div class="modal-content">
 					<div class="modal-header " id="title">
 						<h5 class="modal-title mx-auto text-white" id="modalContactMe">Contact Me</h5>
-						<button type="button" class="close" data-dismiss="modal"><i class="fa fa-window-close text-white" aria-hidden="true"></i></button>
+						<button type="button" class="close" data-dismiss="modal"><i class="fa fa-window-close text-white"
+																										aria-hidden="true"></i></button>
 					</div>
 					<div class="modal-body" id="mid-card-2">
 						<form>
@@ -362,15 +375,16 @@
 								</div>
 							</div>
 						</form>
-						<div class="modal-footer" id="mid-card-2 m-0">
 
-							<button type="button" class="btn btn-primary mx-auto">Send message</button>
+						<div class="modal-footer" id="sField">
+							<div class="g-recaptcha" data-sitekey="6Ldc3y4UAAAAAK41_8gfyPe5Q6byUO7GNPnvXayU"></div>
+							<button type="button" class="btn btn-primary">Send message</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-<!--Contact Form end-->
+		<!--Contact Form end-->
 
 		<!--Footer-->
 		<footer class="navbar-fixed-bottom no-gutter" id="top">
@@ -382,30 +396,22 @@
 						<span class="text-white text-right ">2010-2017 Artrenai</span>
 					</div>
 					<div class="col-sm-5 text-right ">
-						<i class="fa fa-linkedin-square fa-2x text-white p-2" aria-hidden="true"></i>
-						<i class="fa fa-github-square fa-2x text-white p-2" aria-hidden="true"></i>
-						<i class="fa fa-twitter-square fa-2x text-white p-2" aria-hidden="true"></i>
-						<i class="fa fa-instagram fa-2x text-white p-2" aria-hidden="true"></i>
-
-
+						<a href="https://www.linkedin.com/in/godfrey-davis-4a661365/" target="_blank"><i
+								class="fa fa-linkedin-square fa-2x text-white p-2" aria-hidden="true"></i></a>
+						<a href="https://github.com/Artrenai" target="_blank"><i
+								class="fa fa-github-square fa-2x text-white p-2" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/artrenai" target="_blank"><i
+								class="fa fa-twitter-square fa-2x text-white p-2" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/fodistpo/" target="_blank"><i
+								class="fa fa-instagram fa-2x text-white p-2" aria-hidden="true"></i></a>
 					</div>
 				</div>
 			</div>
 		</footer>
-
 		<!--End Footer-->
 
 
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-				  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-				  crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-				  integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-				  crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
-				  integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-				  crossorigin="anonymous"></script>
+
 
 	</body>
-
 </html>
