@@ -10,25 +10,32 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
 				integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--Javascript jQuery etc--->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+				  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+				  crossorigin="anonymous"></script>
+
 		<!-- jQuery Form, Additional Methods, Validate -->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 
-		<!-- Your JavaScript Form Validator -->
-		<script src="js/form-validate.js"></script>
-
-		<!-- Google reCAPTCHA -->
-		<script src='https://www.google.com/recaptcha/api.js'></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-				  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-				  crossorigin="anonymous"></script>
+		<!--bootstrap required files--->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
 				  integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
 				  crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
 				  integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
 				  crossorigin="anonymous"></script>
+
+
+		<!-- Your JavaScript Form Validator -->
+		<script src="js/form-validate.js"></script>
+
+		<!-- Google reCAPTCHA -->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/script.js"></script>
 	</head>
@@ -335,9 +342,11 @@
 						<button type="button" class="close" data-dismiss="modal"><i class="fa fa-window-close text-white"
 																										aria-hidden="true"></i></button>
 					</div>
+					<!--Contact form-->
 					<div class="modal-body" id="mid-card-2">
-						<form>
+						<form id="contact form" action="" method="post" novalidate>
 							<div class="form-group">
+								<!---Name Field-->
 								<label class="text-white" for="name">Name</label>
 								<div class="input-group" id="mid-card">
 									<div class="input-group-addon" id="title">
@@ -346,6 +355,7 @@
 									<input type="text" class="form-control" id="name" name="name" placeholder="Name">
 								</div>
 							</div>
+							<!--Email Field-->
 							<div class="form-group">
 								<label class="text-white" for="email">Email address</label>
 								<div class="input-group">
@@ -355,6 +365,7 @@
 									<input type="email" class="form-control" id="email" name="email" placeholder="Email">
 								</div>
 							</div>
+							<!---Subject Field-->
 							<div class="form-group">
 								<label class="text-white" for="subject">Subject</label>
 								<div class="input-group">
@@ -364,6 +375,7 @@
 									<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
 								</div>
 							</div>
+							<!--Form Field-->
 							<div class="form-group">
 								<label class="text-white" for="message">Message</label>
 								<div class="input-group">
@@ -375,7 +387,11 @@
 								</div>
 							</div>
 						</form>
+					<!--End of Contact Form-->
 
+						<div id="output-area">
+
+						</div>
 						<div class="modal-footer" id="sField">
 							<div class="g-recaptcha" data-sitekey="6Ldc3y4UAAAAAK41_8gfyPe5Q6byUO7GNPnvXayU"></div>
 							<button type="button" class="btn btn-primary">Send message</button>
